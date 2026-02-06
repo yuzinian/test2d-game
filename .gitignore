@@ -1,0 +1,19 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+*.translation
+
+# Imported formats (optional, depends on project)
+*.import
+
+# Export presets
+export_presets.cfg
+
+# Mono/C# files (if needed)
+.mono/
+.vscode/
+*.sln
+*.csproj
+
+# OS specific
+.DS_Store
