@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ckc8ndqvth42x"]
+
+[ext_resource type="Script" uid="uid://ck58afyv88vpb" path="res://Scripts/Characters/player.gd" id="1_script"]
+[ext_resource type="SpriteFrames" path="res://Scenes/Prefabs/Characters/player_frames.tres" id="2_frames"]
+[ext_resource type="Shape2D" path="res://Scenes/Prefabs/Characters/player_shape.tres" id="3_shape"]
+
+[node name="Player" type="CharacterBody2D" unique_id=366958989]
+script = ExtResource("1_script")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=855071373]
+sprite_frames = ExtResource("2_frames")
+animation = &"idle"
+
+[node name="Collision" type="CollisionShape2D" parent="." unique_id=1127904145]
+position = Vector2(-20, 21)
+shape = ExtResource("3_shape")
+
+[node name="Camera" type="Camera2D" parent="." unique_id=1105047948]
+zoom = Vector2(2, 2)
